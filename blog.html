@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="blog content by using bootstrap">
+  <meta name="keywords" content="blog pratice with bootstrap">
+  <!-- meta setting end -->
+  <title>blog-bootstrap</title>
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <style>
+    * {
+      font-family: "Microsoft JhengHei", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .breadcrumb {
+      background-color: transparent;
+    }
+
+    .text-hexschool {
+      color: #00cc99 !important;
+    }
+
+    p,
+    ul {
+      line-height: 1.8;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark" style="background-color : #00cc99">
+    <a class="navbar-brand " href="#"> <i class="far fa-gem pr-2"></i>六角部落格</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Blog</a>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <nav class="breadcrumb pl-0">
+      <a class="breadcrumb-item text-hexschool" href="#">Home</a>
+      <a class="breadcrumb-item text-hexschool" href="#">部落格</a>
+      <span class="breadcrumb-item active">Bootstrap</span>
+    </nav>
+    <h1 class="text-hexschool">Bootstrap 4 繁體中文手冊</h1>
+    <div class="my-2 text-secondary">
+      <small>
+        <span class="mr-3 ">
+          <i class="far fa-user"></i> 卡斯伯
+        </span>
+        <span class="mr-3">2017/08/13
+        </span>
+        <span><a class="text-info"><i class="mr-1 fas fa-tag"></i>event</a></span>
+      </small>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <article>
+          <h2 class="text-secondary">Bootstrap 4 的特色</h2>
+          <p>Bootstrap 是目前最主流的 CSS 框架，由於他包含了大量的元件以及具有良好的架構，在實際運用及擴增也都是非常容易，也越來越多開發者協同一起開發 (Github 上有超過 10 萬個 Star)。如今第四版
+            Beta (Bootstrap 4 Beta) 也在 2017/8/10 釋出，我們先來看看他有什麼樣的改變吧！
+          </p>
+          <ul>
+            <li>從 Less 到 Sass: 自從 Sass 不在只能使用 Ruby 編譯後，Libsass 有更快的編譯效率，加上 Sass 本身具有龐大的開發社群，所以 Bootstrap 從 Less 改用 Sass
+              囉！
+            </li>
+            <li>Flexbox 以及強化的網格系統: 網格系統不在使用 float，進而改用 flexbox，讓行動裝置及桌面裝置有更彈性的排版方法。</li>
+            <li>卡片元件: 許多元件本質相似度較高，如 wells、thumbnails、panels 等等，這些元件被捨棄掉，取而代之的則是卡片元件，不僅可以完成上述元件的功能，且運作的更為美好。</li>
+            <li>彈性更高的變數: 以往的樣式都是固定的名稱、色彩，透過 Sass $map 變數可以更有彈性的調整、新增、減少不同的品牌色彩、陰影等視覺效果。</li>
+            <li>IE8、IE9 掰掰: 放棄舊有的瀏覽器支持，讓元件的使用及開發上更為容易，如果還是考慮支援 IE8/IE9、 Safari 8-、 iOS 8- 可以繼續使用 Bootstrap 3。</li>
+            <li>重新設計說明文件: 新的文件重新設計了，並且加入一些插件讓搜尋上更為容易！</li>
+            <li>更多的改變: 重新設計更多更多的樣式，像是自由套色的導覽列、HTML5 的驗證樣式、嶄新的輪播以及許多的元件</li>
+          </ul>
+
+          <h2 class="text-secondary">繁體中文手冊</h2>
+          <p>加入了這麼多新功能，如果從頭開始了解原文版本也需要花上不少時間，於是六角學院從兩個月前開始著手翻譯，在正式釋出 Beta 版後的兩個工作日釋出繁體中文手冊，讓對於 Bootstrap 有需求的同學可以加速上手～
+          </p>
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F08%2Fbootstrap4.png?alt=media&token=0b014ac6-b99b-46e7-8336-3fbfda1da3c2"
+            class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+          <p>如果你期待六角學院的 Bootstrap 相關課程，也可以透過以下連結或加入我們的<span class="text-hexschool">LINE</span>，等待課程釋出的同時也會通知您喔！
+          </p>
+        </article>
+        <div class="card text-left">
+          <div class="card-header">
+            留言回覆
+          </div>
+          <div class="card-body">
+            <div class="media mb-4">
+              <img src="https://randomuser.me/api/portraits/women/81.jpg" class="mr-3" alt="userphoto1" width="64"
+                height="64">
+              <div class="media-body">
+                <h5 class="mt-0 text-info">六角寶貝</h5>
+                <div class="form-group">
+                  <textarea class="form-control text-secondary" rows="3">寫下寶貴的意見</textarea>
+                </div>
+                <button class="btn btn-light btn-block">Submit</button>
+              </div>
+            </div>
+            <div class="media mb-4">
+              <img src="https://randomuser.me/api/portraits/men/34.jpg" class="mr-3" alt="userphoto1" width="64"
+                height="64">
+              <div class="media-body">
+                <h5 class="mt-0">John</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
+                odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                fringilla. Donec lacinia congue felis in faucibus.
+              </div>
+            </div>
+            <div class="media mb-4">
+              <img src="https://randomuser.me/api/portraits/women/90.jpg" class="mr-3" alt="userphoto1" width="64"
+                height="64">
+              <div class="media-body">
+                <h5 class="mt-0">Sherry</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
+                odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                fringilla. Donec lacinia congue felis in faucibus.
+              </div>
+            </div>
+            <div class="media">
+              <img src="https://randomuser.me/api/portraits/men/19.jpg" class="mr-3" alt="userphoto1" width="64"
+                height="64">
+              <div class="media-body">
+                <h5 class="mt-0">Tommy</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
+                odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                fringilla. Donec lacinia congue felis in faucibus.
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h2 class="text-secondary">Tags</h2>
+        <a href="#" class="badge badge-info p-1"><i class="mr-1 fas fa-tag"></i>scss</a>
+        <a href="#" class="badge badge-info p-1"><i class="mr-1 fas fa-tag"></i>css</a>
+        <a href="#" class="badge badge-info p-1"><i class="mr-1 fas fa-tag"></i>html</a>
+        <a href="#" class="badge badge-info p-1"><i class="mr-1 fas fa-tag"></i>bootstrap5</a>
+        <a href="#" class="badge badge-info p-1"><i class="mr-1 fas fa-tag"></i>design</a>
+      </div>
+
+    </div>
+
+  </div>
+  <footer class="bg-light py-4 mt-4">
+    <div class="container text-center d-flex">
+      © Copright 2017 冰雪歷險記
+      <div class="ml-auto">
+        <a  href=""><i class="fab fa-facebook-square"></i></a>
+        <a href=""><i class="fab fa-twitter-square"></i></a>
+        <a href=""><i class="fab fa-google-plus-square"></i></a>
+      </div>
+    </div>
+   
+  </footer>
+  <!-- bootstrap js -->
+  <!-- jq first popper second bootstrap last -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <!-- fontawsome kit code -->
+  <script src="https://kit.fontawesome.com/63b39233d0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
